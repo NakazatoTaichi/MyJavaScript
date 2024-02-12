@@ -1,7 +1,10 @@
 'use strict';
 
-console.log(50 + '20');
+const score = Number(prompt('Score?'));
 
-const n = prompt('Any number?');
-console.log(Number(n) + 10);
+if(score >= 90) {
+    console.log('A!');
+} else {
+    console.log('Not A!');
+}
 
