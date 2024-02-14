@@ -1,6 +1,7 @@
 'use strict';
 
 
-for (let i = 0; i < 3; i++) {
-    console.log('Hello');
+// for (let i = 0; i < 10; i++) {
+for (let i = 1; i < 11; i++) {
+    console.log(`${i}:Hello`);
 }
