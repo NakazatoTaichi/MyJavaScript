@@ -1,10 +1,19 @@
 'use strict';
 
-const rate = 1.1;
+// let command = Number(prompt('Menu 1, 2, 3 or 0 to exit'));
 
-for (let price = 150; price <= 160; price++) {
-    console.log(`Price: ${price}`);
-    for (let amount = 120; amount <= 140; amount+=10) {
-        console.log(price * amount * rate);
+// while (command !== 0) {
+//     console.log(`Menu ${command} processed. `);
+//     command = Number(prompt('Menu 1, 2, 3 or 0 to exit'))
+// }
+
+let command;
+
+do {
+    command = Number(prompt('Menu 1, 2, 3 or 0 to exit'))
+    if (command === 0) {
+        console.log('Exited');
+    } else {
+        console.log(`Menu ${command} processed. `);
     }
-}
+} while (command !== 0);
