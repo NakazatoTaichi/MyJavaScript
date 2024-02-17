@@ -1,14 +1,14 @@
 'use strict';
 {
+    console.log(double(10));
+
+    //関数宣言
     function double(num) {
         return num * 2;
     }
 
-    function triple(num) {
-        return num * 3;
-    }
-
-    console.log(double(10));
-    console.log(triple(30));
-
+    //関数式
+    // const double = function (num) {
+    //     return num * 2;
+    // };
 }
