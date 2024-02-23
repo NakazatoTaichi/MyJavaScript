@@ -5,8 +5,12 @@
         english: 90,
     };
 
-    scores.physics = 70;
-    delete scores.english;
+    const entries = Object.entries(scores);
 
-    console.log(scores);
+    // console.log(entries);
+
+    entries.forEach((prop) => {
+        // console.log(prop)
+        console.log(`${prop[0]}: ${prop[1]}`);
+    });
 }
