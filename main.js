@@ -13,5 +13,6 @@
         return price >= 150;
     });
 
+
     console.log(pricesOver150);
 }
