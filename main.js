@@ -1,13 +1,12 @@
 'use strict';
 {
-    const scores = [70, 90, 80, 85];
+    // const names = ['Taro', 'Ziro', 'Saburo'];
 
-    scores.splice(2, 0, 77, 80);
+    // //Taro|Ziro|Saburo
+    // console.log(names.join('|'));
+    // console.log(names.join());
+    // console.log(names.join(''));
 
-    const deleted = scores.splice(3, 1);
-
-    scores.splice(2, 2, 30);
-
-    console.log(scores);
-    console.log(deleted);
+    const names = 'Taro|Ziro|Saburo';
+    console.log(names.split('|'));
 }
