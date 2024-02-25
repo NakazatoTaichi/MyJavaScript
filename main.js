@@ -1,17 +1,21 @@
 'use strict';
 {
-    const scores = [70, 90, 80, 85];
 
-    // const first = scores[0];
-    // const second = scores[1];
-    // const third = scores[2];
-    // const fourth = scores[3];
+    let start = 'Tokyo';
+    let goal = 'Osaka';
 
-    const [first, second, third, fourth] = scores;
+    // start = goal;
+    // goal = start;
 
-    console.log(first);
-    console.log(second);
-    console.log(third);
-    console.log(fourth);
+    // let temp = '';
+    // temp = start;
+    // start = goal;
+    // goal = temp;
+
+    [goal, start] = [start, goal];
+
+    console.log(start);
+    console.log(goal);
+
 
 }
