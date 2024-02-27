@@ -1,7 +1,10 @@
 'use strict';
 {
-    const string = prompt('Any message?');
-    console.log(string);
-    console.log(string.length);
-    console.log(string[0]);
+    const string = prompt('Name?');
+    // if (string.toLowerCase() === 'taro') {
+    if (string.toUpperCase() === 'TARO') {
+        console.log('Correct!');
+    } else {
+        console.log('Wrong!');
+    }
 }
