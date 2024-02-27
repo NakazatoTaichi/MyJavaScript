@@ -1,12 +1,21 @@
 'use strict';
 {
     document.querySelector('button').addEventListener('click', () => {
-        document.querySelector('#second').textContent = 'Changed!';
-        // document.querySelectorAll('li')[0].textContent = 'Changed!';
-        // document.querySelectorAll('li')[1].textContent = 'Changed!';
-        // document.querySelectorAll('li')[2].textContent = 'Changed!';
-        // document.querySelectorAll('.target').forEach((li) => {
-        //     li.textContent = 'Changed!';
-        // });
+        const liElement = document.createElement('li');
+        liElement.textContent = 'Hanako';
+
+        //appendChild
+        // document.querySelector('ul').appendChild(liElement);
+
+        //insertBefore
+        // document.querySelector('ul').insertBefore(
+        //     liElement,
+        //     document.querySelector('#second')
+        // );
+
+        //要素の削除
+        if (confirm('Sure?') === true) {
+            document.querySelector('#second').remove();
+        }
     });
 }
