@@ -1,7 +1,10 @@
 'use strict';
 {
+    function getRandomInteger(max) {
+        return Math.floor(Math.random() * (max + 1));
+    }
     for (let i = 0; i < 10; i++) {
-        const n = Math.floor(Math.random() * 3);
+        const n = getRandomInteger(5) + 1;
         console.log(`${i}: ${n}`);
     }
 
